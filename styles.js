@@ -1,4 +1,11 @@
+import { Roboto } from 'next/font/google';
 import { createGlobalStyle } from "styled-components";
+
+const roboto = Roboto({
+    subsets: ['latin'],
+    weight: ['400'],
+});
+
 
 export default createGlobalStyle`
   *,
@@ -10,7 +17,8 @@ export default createGlobalStyle`
   body {
     display: flex;
     justify-content: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: ${roboto.style.fontFamily};
+    font-style: normal;
   }
  
 
@@ -31,42 +39,34 @@ export default createGlobalStyle`
 
   h1 {
     font-size: 1.75rem;
-    font-style: normal;
   }
 
   h2 {
     font-size: 1.6rem;
-    font-style: normal;
   }
 
   h3 {
     font-size: 1.4rem;
-    font-style: normal;
   }
 
   h4 {
     font-size: 1.2rem;
-    font-style: normal;
   }
 
   h5 {
     font-size: 1.1rem;
-    font-style: normal;
   }
 
   p {
     font-size: 1rem;
-    font-style: normal;
   }
 
   .miscellaneous {
     font-size: 0.75rem;
-    font-style: normal;
   }
 
   .copyright {
     font-size: 0.5rem;
-    font-style: normal;
   }
 
 `;
