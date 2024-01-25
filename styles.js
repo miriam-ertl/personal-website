@@ -7,6 +7,13 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
+  body {
+    display: flex;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+  }
+ 
+
   :root {
     --me-color-primary-color-gray-700: #131011;
     --me-color-primary-color-gray-600: #2F292B;
@@ -20,6 +27,46 @@ export default createGlobalStyle`
 
     --me-text-primary-text-inverted: #FFFFFF;
     --me-text-primary-text-gray-700: #131011;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+    font-style: normal;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+    font-style: normal;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+    font-style: normal;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+    font-style: normal;
+  }
+
+  h5 {
+    font-size: 1.1rem;
+    font-style: normal;
+  }
+
+  p {
+    font-size: 1rem;
+    font-style: normal;
+  }
+
+  .miscellaneous {
+    font-size: 0.75rem;
+    font-style: normal;
+  }
+
+  .copyright {
+    font-size: 0.5rem;
+    font-style: normal;
   }
 
 `;
