@@ -7,18 +7,19 @@ export default createGlobalStyle`
     box-sizing: border-box;
   }
 
-  :root{
-    --dark-green:#0D3B2E;
-    --white: #FFFFFF;
-    --off-white :#F7FAF8;
-    --gold: #FFBA00;
-    --light-green: #6D9773;
-    --light-brown: #D09D6C;
-  }
+  :root {
+    --me-color-primary-color-gray-700: #131011;
+    --me-color-primary-color-gray-600: #2F292B;
+    --me-color-primary-color-gray-500: #51484C;
+    --me-color-primary-color-gray-400: #76696E;
+    --me-color-primary-color-gray-300: #9B8D93;
+    --me-color-primary-color-gray-200: #BDB5B8;
+    --me-color-primary-color-gray-100: #E1DDDF;
 
-  body { margin: 0;
-    padding: 0 20px;
-    font-family: Sans-serif;
+    --me-color-primary-color-white: #FFFFFF;
+
+    --me-text-primary-text-inverted: #FFFFFF;
+    --me-text-primary-text-gray-700: #131011;
   }
 
 `;
