@@ -1,11 +1,10 @@
-import { Roboto } from 'next/font/google';
+import { Roboto } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
 
 const roboto = Roboto({
-    subsets: ['latin'],
-    weight: ['400'],
+  subsets: ["latin"],
+  weight: ["400"],
 });
-
 
 export default createGlobalStyle`
   *,
@@ -23,18 +22,18 @@ export default createGlobalStyle`
  
 
   :root {
-    --me-color-primary-color-gray-700: #131011;
-    --me-color-primary-color-gray-600: #2F292B;
-    --me-color-primary-color-gray-500: #51484C;
-    --me-color-primary-color-gray-400: #76696E;
-    --me-color-primary-color-gray-300: #9B8D93;
-    --me-color-primary-color-gray-200: #BDB5B8;
-    --me-color-primary-color-gray-100: #E1DDDF;
+    --me-color-gray-700: #131011;
+    --me-color-gray-600: #2F292B;
+    --me-color-gray-500: #51484C;
+    --me-color-gray-400: #76696E;
+    --me-color-gray-300: #9B8D93;
+    --me-color-gray-200: #BDB5B8;
+    --me-color-gray-100: #E1DDDF;
 
-    --me-color-primary-color-white: #FFFFFF;
+    --me-color-white: #FFFFFF;
 
-    --me-text-primary-text-inverted: #FFFFFF;
-    --me-text-primary-text-gray-700: #131011;
+    --me-text-inverted: #FFFFFF;
+    --me-text-gray-700: #131011;
   }
 
   h1 {
