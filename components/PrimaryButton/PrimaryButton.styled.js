@@ -6,18 +6,18 @@ export const PrimaryButton = styled.button`
   justify-content: center;
   align-items: center;
   gap: 0.625rem;
-  background: var(--me-color-primary-color-gray-700);
-  color: var(--me-text-primary-text-inverted);
+  background: var(--me-color-gray-700);
+  color: var(--me-text-inverted);
   text-align: center;
   font-size: 0.75rem;
   cursor: pointer;
 
   &:focus {
-    border: 2px solid var(--me-color-primary-color-gray-200);
-    background: var(--me-color-primary-color-gray-500);
+    border: 2px solid var(--me-color-gray-200);
+    background: var(--me-color-gray-500);
   }
 
   &:active {
-    background: var(--me-color-primary-color-gray-400);
+    background: var(--me-color-gray-400);
   }
 `;
