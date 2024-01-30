@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
+import modernNormalize from "modern-normalize";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -7,10 +8,49 @@ const roboto = Roboto({
 });
 
 export default createGlobalStyle`
+  ${modernNormalize}
+
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    margin: 0;
+  }
+
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  img,
+  svg,
+  video,
+  canvas,
+  audio,
+  iframe,
+  embed,
+  object {
+  display: block;
+  vertical-align: middle;
+  }
+
+
   *,
   *::before,
   *::after {
     box-sizing: border-box;
+    border-color: theme('borderColor.DEFAULT', currentColor);
   }
 
   body {
@@ -18,8 +58,34 @@ export default createGlobalStyle`
     justify-content: center;
     font-family: ${roboto.style.fontFamily};
     font-style: normal;
+    margin: 0;
   }
- 
+  
+  hr {
+    height: 0;
+    color: inherit;
+  }
+
+  button {
+	-webkit-appearance: button;
+  }
+
+  ::-moz-focus-inner {
+	  border-style: none;
+	  padding: 0;
+  }
+
+  :-moz-focusring {
+	  outline: 1px dotted ButtonText;
+  }
+
+  :-moz-ui-invalid {
+	  box-shadow: none;
+  }
+
+  progress {
+    vertical-align: baseline;
+  }
 
   :root {
     --me-color-gray-700: #131011;
