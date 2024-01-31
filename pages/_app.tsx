@@ -1,17 +1,20 @@
-import type { AppProps } from 'next/app';
-import GlobalStyle from '../styles';
-import { Roboto } from 'next/font/google';
+import type { AppProps } from "next/app";
+import GlobalStyle from "../styles";
+import Layout from "../components/Layout/Layout";
+import { Roboto } from "next/font/google";
 
 const roboto = Roboto({
-    subsets: ['latin'],
-    weight: ['400'],
+  subsets: ["latin"],
+  weight: ["400"],
 });
 
-export default function App({ Component, pageProps } : AppProps) {
-    return (
+export default function App({ Component, pageProps }: AppProps) {
+  return (
     <main className={roboto.className}>
-        <GlobalStyle />
-        <Component {...pageProps}/>
+      <GlobalStyle />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </main>
-    );
-  }
+  );
+}
