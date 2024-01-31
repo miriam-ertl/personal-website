@@ -1,6 +1,5 @@
 import { Roboto } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
-//import modernNormalize from "modern-normalize";
 
 const roboto = Roboto({
   subsets: ["latin"],
