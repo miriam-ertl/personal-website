@@ -41,8 +41,8 @@ export default createGlobalStyle`
   iframe,
   embed,
   object {
-  display: block;
-  vertical-align: middle;
+    display: block;
+    vertical-align: middle;
   }
 
 
@@ -56,7 +56,7 @@ export default createGlobalStyle`
   body {
     font-family: ${roboto.style.fontFamily};
     font-style: normal;
-    margin: 1em;
+    margin: 0;
     padding: 0;
     height: 100%;
   }
