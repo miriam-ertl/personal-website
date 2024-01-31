@@ -1,6 +1,6 @@
 import { Roboto } from "next/font/google";
 import { createGlobalStyle } from "styled-components";
-import modernNormalize from "modern-normalize";
+//import modernNormalize from "modern-normalize";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -8,7 +8,6 @@ const roboto = Roboto({
 });
 
 export default createGlobalStyle`
-  ${modernNormalize}
 
   blockquote,
   dl,
@@ -61,13 +60,13 @@ export default createGlobalStyle`
     height: 100%;
   }
 
-  .container {
+  /* .container {
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
   }
 
-  .header, .footer {
+ .header, .footer {
     padding: 20px;
     background-color: #333;
     color: #fff;
@@ -75,7 +74,7 @@ export default createGlobalStyle`
    
   .content {
     padding: 20px;
-  }  
+  }*/  
 
   hr {
     height: 0;
