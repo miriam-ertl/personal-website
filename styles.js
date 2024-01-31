@@ -147,9 +147,8 @@ export default createGlobalStyle`
   .copyright {
     font-size: 0.5rem;
   }
-
+  
   section:nth-child(even) {
     background-color: var(--me-color-gray-600);
   }
-
 `;
