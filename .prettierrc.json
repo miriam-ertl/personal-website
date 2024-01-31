@@ -18,5 +18,6 @@
   "vueIndentScriptAndStyle": false,
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
-  "singleAttributePerLine": false
+  "singleAttributePerLine": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }
