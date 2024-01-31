@@ -1,14 +1,19 @@
-import { CroppedCircleImage } from "@/components/Images/Images.styled";
-import Image from "next/image";
 import { PrimaryButton } from "@/components/PrimaryButton/PrimaryButton.styled";
 import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled";
+import { StyledCroppedImage } from "@/components/Images/Images.styled";
+import { StyledImage } from "@/components/Images/Images.styled";
 
 export default function HomePage() {
   return (
     <main>
       <section>
         <h1>Headline</h1>
-        <Image src="../src/" width={300} height={310} alt="placeholder" />
+        <StyledImage
+          src="../src/placeholder-300x310.jpg"
+          width={300}
+          height={310}
+          alt="placeholder"
+        />
         <PrimaryButton>hello</PrimaryButton>
       </section>
       <section>
@@ -27,11 +32,26 @@ export default function HomePage() {
       </section>
       <section>
         <h2>Im digitalen Universum</h2>
-        <CroppedCircleImage>
-          <Image src="../src/" width={148} height={148} alt="placeholder" />
-          <Image src="../src/" width={148} height={148} alt="placeholder" />
-          <Image src="../src/" width={148} height={148} alt="placeholder" />
-        </CroppedCircleImage>
+        <StyledCroppedImage>
+          <StyledImage
+            src="../src/placeholder-148x148.jpg"
+            width={148}
+            height={148}
+            alt="placeholder"
+          />
+          <StyledImage
+            src="../src/placeholder-148x148.jpg"
+            width={148}
+            height={148}
+            alt="placeholder"
+          />
+          <StyledImage
+            src="../src/placeholder-148x148.jpg"
+            width={148}
+            height={148}
+            alt="placeholder"
+          />
+        </StyledCroppedImage>
         <SecondaryButton>hello</SecondaryButton>
       </section>
     </main>
