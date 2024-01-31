@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Button = styled.button`
+export const Button = styled.button<{ $secondary?: boolean }>`
   display: inline-flex;
   padding: 0.5rem 0.75rem;
   justify-content: center;

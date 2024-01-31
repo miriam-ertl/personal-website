@@ -1,5 +1,5 @@
-import { Button } from "@/components/Button/Button.styled.js";
+import { Button } from "@/components/Button/Button.styled";
 
 export default function StyledButton() {
-  return <Button />;
+  return <Button $secondary />;
 }

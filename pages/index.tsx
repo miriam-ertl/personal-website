@@ -1,4 +1,4 @@
-import { Button } from "@/components/Button/Button.styled.js";
+import { Button } from "@/components/Button/Button.styled";
 
 export default function HomePage() {
   return (
