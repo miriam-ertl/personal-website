@@ -1,5 +1,9 @@
-import { Layout } from "@Layout";
-
 export default function HomePage() {
-  return <Layout />;
+  return (
+    <div className="container">
+      <header className="header">logo</header>
+      <main className="content">für sections</main>
+      <footer className="footer">social</footer>
+    </div>
+  );
 }

@@ -54,13 +54,29 @@ export default createGlobalStyle`
   }
 
   body {
-    display: flex;
-    justify-content: center;
     font-family: ${roboto.style.fontFamily};
     font-style: normal;
-    margin: 0;
+    margin: 1em;
+    padding: 0;
+    height: 100%;
   }
-  
+
+  .container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+  }
+
+  .header, .footer {
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+  }
+   
+  .content {
+    padding: 20px;
+  }  
+
   hr {
     height: 0;
     color: inherit;
