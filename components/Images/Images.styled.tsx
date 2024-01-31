@@ -7,7 +7,7 @@ export const CroppedCircleImage = styled(Image)`
   border-radius: 50%;
 `;
 
-export const RectangleImage = styled(Image)`
+export const Image = styled(Image)`
   display: inlne;
   height: 100%;
   width: auto;

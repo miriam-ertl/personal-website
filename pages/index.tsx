@@ -1,3 +1,5 @@
+import { CroppedCircleImage } from "@/components/Images/Images.styled";
+import Image from "next/image";
 import { PrimaryButton } from "@/components/PrimaryButton/PrimaryButton.styled";
 import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled";
 
@@ -6,7 +8,7 @@ export default function HomePage() {
     <main>
       <section>
         <h1>Headline</h1>
-        <img src="pic_trulli.jpg" alt="placeholder"></img>
+        <Image src="../src/" width={300} height={310} alt="placeholder" />
         <PrimaryButton>hello</PrimaryButton>
       </section>
       <section>
@@ -25,9 +27,11 @@ export default function HomePage() {
       </section>
       <section>
         <h2>Im digitalen Universum</h2>
-        <img src="pic_trulli.jpg" alt="placeholder"></img>
-        <img src="pic_trulli.jpg" alt="placeholder"></img>
-        <img src="pic_trulli.jpg" alt="placeholder"></img>
+        <CroppedCircleImage>
+          <Image src="../src/" width={148} height={148} alt="placeholder" />
+          <Image src="../src/" width={148} height={148} alt="placeholder" />
+          <Image src="../src/" width={148} height={148} alt="placeholder" />
+        </CroppedCircleImage>
         <SecondaryButton>hello</SecondaryButton>
       </section>
     </main>
