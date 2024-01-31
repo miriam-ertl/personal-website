@@ -19,7 +19,7 @@ export default function HomePage() {
       </section>
       <div>
         <Button>About</Button>
-        <Button>Work</Button>
+        <Button $secondary>Work</Button>
       </div>
     </main>
   );
