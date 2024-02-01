@@ -9,13 +9,12 @@ const StyledCroppedImage = styled(NextImage)`
 `;
 
 const StyledImage = styled(NextImage)`
-  display: inlne;
-  height: 100%;
+  display: inline;
   width: auto;
-  margin: 0 auto;
+  margin: 0;
 `;
 
-interface StyledImageProps extends image.ImageProps {
+export interface StyledImageProps extends image.ImageProps {
   variant: "cropped" | "default";
 }
 
