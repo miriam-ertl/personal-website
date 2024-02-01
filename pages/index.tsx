@@ -1,7 +1,6 @@
-import Image from "next/image";
+import Image from "@/components/Image/Image";
 import { PrimaryButton } from "@/components/PrimaryButton/PrimaryButton.styled";
 import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled";
-import { StyledCroppedImage } from "@/components/Images/Images.styled";
 
 export default function HomePage() {
   return (
@@ -13,6 +12,7 @@ export default function HomePage() {
           width={300}
           height={310}
           alt="placeholder"
+          variant="default"
         />
         <PrimaryButton>hello</PrimaryButton>
       </section>
@@ -32,23 +32,26 @@ export default function HomePage() {
       </section>
       <section>
         <h2>Im digitalen Universum</h2>
-        <StyledCroppedImage
+        <Image
           src="/placeholder-148-148.jpg"
           width={148}
           height={148}
           alt="placeholder"
+          variant="cropped"
         />
-        <StyledCroppedImage
+        <Image
           src="/placeholder-148-148.jpg"
           width={148}
           height={148}
           alt="placeholder"
+          variant="cropped"
         />
-        <StyledCroppedImage
+        <Image
           src="/placeholder-148-148.jpg"
           width={148}
           height={148}
           alt="placeholder"
+          variant="cropped"
         />
         <SecondaryButton>hello</SecondaryButton>
       </section>
