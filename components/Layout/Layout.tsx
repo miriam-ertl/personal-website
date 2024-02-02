@@ -1,6 +1,6 @@
 import { Container } from "@/components/Layout/Layout.styled";
 import { Content } from "@/components/Layout/Layout.styled";
-import { Footer } from "@/components/Footer/Footer.styled";
+import Footer from "@/components/Footer/Footer";
 import Header from "../Header/Header";
 
 interface LayoutProps {
