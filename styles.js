@@ -43,7 +43,6 @@ export default createGlobalStyle`
     vertical-align: middle;
   }
 
-
   *,
   *::before,
   *::after {
@@ -59,21 +58,12 @@ export default createGlobalStyle`
     height: 100%;
   }
 
-  /* .container {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
+  @media screen and (min-width: 576px) {
+      body {
+      max-width: 576px;
+      margin: 0 auto;
+    }
   }
-
- .header, .footer {
-    padding: 20px;
-    background-color: #333;
-    color: #fff;
-  }
-   
-  .content {
-    padding: 20px;
-  }*/  
 
   hr {
     height: 0;
