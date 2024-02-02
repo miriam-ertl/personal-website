@@ -8,6 +8,7 @@ export default function HomePage() {
     <main>
       <section>
         <h1>{content.headline}</h1>
+        <PrimaryButton>{content.button}</PrimaryButton>
         <Image
           src={content.image.src}
           width={content.image.width}
@@ -15,7 +16,6 @@ export default function HomePage() {
           alt={content.image.alt}
           variant={content.image.variant}
         />
-        <PrimaryButton>{content.button}</PrimaryButton>
       </section>
       <section>
         <hgroup>
@@ -62,13 +62,14 @@ export default function HomePage() {
 
 interface ContentProps {
   headline: string;
-  image: StyledImageProps;
   button: string;
+  image: StyledImageProps;
   variant: "bright" | "dark";
 }
 
 export const content: ContentProps = {
   headline: "Wo Ideen ihre Reise machen – in der Welt der Codes.",
+  button: "hello",
   image: {
     src: "/placeholder-300-310.jpg",
     width: 300,
@@ -76,7 +77,6 @@ export const content: ContentProps = {
     alt: "placeholder",
     variant: "default",
   },
-  button: "hello",
   variant: "bright",
 };
 
