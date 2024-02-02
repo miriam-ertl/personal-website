@@ -1,5 +1,13 @@
-import { Footer } from "@/components/Footer/Footer.styled";
+import styled from "styled-components";
 
-export default function StyledFooter() {
-  return <Footer />;
-}
+const StyledFooter = styled.footer`
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+`;
+
+const Footer = () => {
+  return <StyledFooter>hello</StyledFooter>;
+};
+
+export default Footer;
