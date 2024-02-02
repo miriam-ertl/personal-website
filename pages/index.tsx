@@ -19,42 +19,37 @@ export default function HomePage() {
       </section>
       <section>
         <hgroup>
-          <p className="miscellaneous">Eine digitale Reise</p>
-          <h2>
-            HTML, CSS, JavaScript im Spiel, Grafiken und Funktionen, mit jedem
-            Ziel. Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.
-          </h2>
+          <p className="miscellaneous">
+            {contentTwo.headlineGroup.headlineSmall}
+          </p>
+          <h2>{contentTwo.headlineGroup.headline}</h2>
         </hgroup>
-        <p>
-          Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive
-          Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie
-          die Fantasie.
-        </p>
+        <p>{contentTwo.paragraph}</p>
       </section>
       <section>
-        <h2>Im digitalen Universum</h2>
+        <h2>{contentThree.headline}</h2>
         <Image
-          src="/placeholder-148-148.jpg"
-          width={148}
-          height={148}
-          alt="placeholder"
-          variant="cropped"
+          src={contentThree.image.src}
+          width={contentThree.image.width}
+          height={contentThree.image.height}
+          alt={contentThree.image.alt}
+          variant={contentThree.image.variant}
         />
         <Image
-          src="/placeholder-148-148.jpg"
-          width={148}
-          height={148}
-          alt="placeholder"
-          variant="cropped"
+          src={contentThree.image.src}
+          width={contentThree.image.width}
+          height={contentThree.image.height}
+          alt={contentThree.image.alt}
+          variant={contentThree.image.variant}
         />
         <Image
-          src="/placeholder-148-148.jpg"
-          width={148}
-          height={148}
-          alt="placeholder"
-          variant="cropped"
+          src={contentThree.image.src}
+          width={contentThree.image.width}
+          height={contentThree.image.height}
+          alt={contentThree.image.alt}
+          variant={contentThree.image.variant}
         />
-        <SecondaryButton>hello</SecondaryButton>
+        <SecondaryButton>{contentThree.button}</SecondaryButton>
       </section>
     </main>
   );
@@ -69,7 +64,7 @@ interface ContentProps {
 
 export const content: ContentProps = {
   headline: "Wo Ideen ihre Reise machen – in der Welt der Codes.",
-  button: "hello",
+  button: "About",
   image: {
     src: "/placeholder-300-310.jpg",
     width: 300,
@@ -80,9 +75,39 @@ export const content: ContentProps = {
   variant: "bright",
 };
 
-interface ContentProps2 {
-  headlinegroup: { headline: string; headlinesmall: string };
-  parapgraph: string;
+interface ContentPropsTwo {
+  headlineGroup: { headlineSmall: string; headline: string };
+  paragraph: string;
+  variant: "bright" | "dark";
 }
 
-export const content2: ContentProps2 = {};
+export const contentTwo: ContentPropsTwo = {
+  headlineGroup: {
+    headlineSmall: "Eine digitale Reise",
+    headline:
+      "HTML, CSS, JavaScript im Spiel, Grafiken und Funktionen, mit jedem Ziel. Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
+  },
+  paragraph:
+    "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
+  variant: "dark",
+};
+
+interface ContentPropsThree {
+  headline: string;
+  image: StyledImageProps;
+  button: string;
+  variant: "bright" | "dark";
+}
+
+export const contentThree: ContentPropsThree = {
+  headline: "Im digitalen Universum",
+  image: {
+    src: "/placeholder-148-148.jpg",
+    width: 148,
+    height: 148,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+  button: "Work",
+  variant: "bright",
+};
