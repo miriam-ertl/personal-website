@@ -2,22 +2,17 @@ import Image, { StyledImageProps } from "@/components/Image/Image";
 
 import { PrimaryButton } from "@/components/PrimaryButton/PrimaryButton.styled";
 import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled";
-import styled from "styled-components";
+import SectionTextButtonImage from "@/components/SectionTextButtonImage/SectionTextButtonImage";
 
 export default function HomePage() {
   return (
     <main>
-      <section>
-        <h1>{content.headline}</h1>
-        <PrimaryButton>{content.button}</PrimaryButton>
-        <Image
-          src={content.image.src}
-          width={content.image.width}
-          height={content.image.height}
-          alt={content.image.alt}
-          variant={content.image.variant}
-        />
-      </section>
+      <SectionTextButtonImage
+        headline={""}
+        button={""}
+        image={undefined}
+        variant={"bright"}
+      ></SectionTextButtonImage>
       <section>
         <hgroup>
           <p className="miscellaneous">
@@ -58,7 +53,7 @@ export default function HomePage() {
 
 // Definition SECTION ONE
 
-const StyledContent = styled.div`
+/*const StyledContent = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +79,7 @@ export const content: ContentProps = {
     variant: "default",
   },
   variant: "bright",
-};
+};*/
 
 // Definition SECTION TWO
 interface ContentPropsTwo {
