@@ -1,8 +1,7 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
-import { PrimaryButton } from "@/components/PrimaryButton/PrimaryButton.styled";
 import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled";
-import SectionTextButtonImage from "@/components/SectionTextButtonImage/SectionTextButtonImage";
+import SectionTextButtonImage from "@/components/SectionTextButton/SectionTextButtonImage";
 
 export default function HomePage() {
   return (

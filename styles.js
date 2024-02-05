@@ -108,6 +108,7 @@ export default createGlobalStyle`
 
   h1 {
     font-size: 1.75rem;
+    padding: 5rem 0 5rem 0;
   }
 
   h2 {
