@@ -56,6 +56,16 @@ export default function HomePage() {
   );
 }
 
+// Definition SECTION ONE
+
+const StyledContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+`;
+
 interface ContentProps {
   headline: string;
   button: string;
@@ -76,6 +86,7 @@ export const content: ContentProps = {
   variant: "bright",
 };
 
+// Definition SECTION TWO
 interface ContentPropsTwo {
   headlineGroup: { headlineSmall: string; headline: string };
   paragraph: string;
@@ -92,6 +103,8 @@ export const contentTwo: ContentPropsTwo = {
     "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
   variant: "dark",
 };
+
+// Definition SECTION THREE
 
 interface ContentPropsThree {
   headline: string;
