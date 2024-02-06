@@ -6,9 +6,24 @@ const StyledSectionTextbackground = styled.section<Variant>`
   flex-direction: column;
   align-items: center;
   background-color: ${({ variant }) =>
-    variant === "dark" ? "var(--me-color-gray-700)" : "var(--me-color-white)"};
+    variant === "dark" ? "var(--me-color-gray-500)" : "var(--me-color-white)"};
   color: ${({ variant }) =>
     variant === "dark" ? "var(--me-text-inverted)" : "var(--me-text-gray-700)"};
+`;
+
+const StlyedHeadlineGroup = styled.div`
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding-bottom: 5rem;
+  margin: 0.5rem;
+`;
+
+const StyledParagraph = styled.p`
+  justify-content: flex-end;
+  align-self: flex-end;
+  padding-left: 16rem;
+  padding-bottom: 5rem;
+  margin-right: 5rem;
 `;
 
 interface ContentPropsTwo extends Variant {
@@ -24,9 +39,13 @@ const SectionTextBackground = ({
 }: ContentPropsTwo) => {
   return (
     <StyledSectionTextbackground variant={variant}>
-      <p className="miscellaneous">{headlineGroup.headlineSmall}</p>
-      <h2>{headlineGroup.headline}</h2>
-      <p>{paragraph}</p>
+      <StlyedHeadlineGroup>
+        <h6 className="miscellaneous">{headlineGroup.headlineSmall}</h6>
+        <h2>{headlineGroup.headline}</h2>
+      </StlyedHeadlineGroup>
+      <StyledParagraph>
+        <p>{paragraph}</p>
+      </StyledParagraph>
     </StyledSectionTextbackground>
   );
 };
