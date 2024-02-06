@@ -7,11 +7,17 @@ export default function HomePage() {
   return (
     <main>
       <SectionTextButtonImage
-        headline={""}
-        button={""}
-        image={undefined}
+        headline={"Wo Ideen ihre Reise machen – in der Welt der Codes."}
+        button={"About"}
+        image={{
+          src: "/placeholder-300-310.jpg",
+          width: 300,
+          height: 300,
+          alt: "placeholder",
+          variant: "default",
+        }}
         variant={"bright"}
-      ></SectionTextButtonImage>
+      />
       <section>
         <hgroup>
           <p className="miscellaneous">
