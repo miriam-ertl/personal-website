@@ -1,9 +1,10 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
 import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled";
+import SectionTextBackground from "@/components/SectionTextBackground/SectionTextBackground";
 import SectionTextButtonImage from "@/components/SectionTextButton/SectionTextButtonImage";
 
-export default function HomePage() {
+export default function HomePage(Headline) {
   return (
     <main>
       <SectionTextButtonImage
@@ -18,15 +19,7 @@ export default function HomePage() {
         }}
         variant={"bright"}
       />
-      <section>
-        <hgroup>
-          <p className="miscellaneous">
-            {contentTwo.headlineGroup.headlineSmall}
-          </p>
-          <h2>{contentTwo.headlineGroup.headline}</h2>
-        </hgroup>
-        <p>{contentTwo.paragraph}</p>
-      </section>
+      <SectionTextBackground headlineSmall={""} headline="" paragraph={""} />
       <section>
         <h2>{contentThree.headline}</h2>
         <Image
