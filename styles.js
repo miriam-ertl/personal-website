@@ -108,27 +108,33 @@ export default createGlobalStyle`
 
   h1 {
     font-size: 1.75rem;
+    line-height: 2.2rem;
     padding: 5rem 0 5rem 0;
   }
 
   h2 {
     font-size: 1.6rem;
+    line-height: 2.1rem;
   }
 
   h3 {
     font-size: 1.4rem;
+    line-height: 1.9rem;
   }
 
   h4 {
     font-size: 1.2rem;
+    line-height: 1.7rem;
   }
 
   h5 {
     font-size: 1.1rem;
+    line-height: 1.6rem;
   }
 
   p {
     font-size: 1rem;
+    line-height: 1.5rem;
   }
 
   .miscellaneous {
