@@ -17,7 +17,7 @@ const StyledSectionTextButtonImage = styled.section<Variant>`
   background-color: ${({ variant }) =>
     variant === "bright"
       ? "var(--me-color-white)"
-      : "var(--me-color-gray-700)"};
+      : "var(--me-color-gray-500)"};
 `;
 
 const StyledTextButtonContainer = styled.div`
