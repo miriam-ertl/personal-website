@@ -1,7 +1,7 @@
 import { Variant } from "../Variant/Variant";
 import styled from "styled-components";
 
-const StyledSectionTextbackground = styled.section<Variant>`
+const StyledSectionTextBackground = styled.section<Variant>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ const StlyedHeadlineGroup = styled.div`
   margin: 0.5rem;
 `;
 
-const StyledParagraph = styled.p`
+const StyledParagraph = styled.div`
   justify-content: flex-end;
   align-self: flex-end;
   padding-left: 16rem;
@@ -38,7 +38,7 @@ const SectionTextBackground = ({
   variant = "dark",
 }: ContentPropsTwo) => {
   return (
-    <StyledSectionTextbackground variant={variant}>
+    <StyledSectionTextBackground variant={variant}>
       <StlyedHeadlineGroup>
         <h6 className="miscellaneous">{headlineGroup.headlineSmall}</h6>
         <h2>{headlineGroup.headline}</h2>
@@ -46,7 +46,7 @@ const SectionTextBackground = ({
       <StyledParagraph>
         <p>{paragraph}</p>
       </StyledParagraph>
-    </StyledSectionTextbackground>
+    </StyledSectionTextBackground>
   );
 };
 
