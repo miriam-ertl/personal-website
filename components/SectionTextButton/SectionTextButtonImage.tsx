@@ -1,9 +1,8 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
 import { PrimaryButton } from "../PrimaryButton/PrimaryButton.styled";
+import { Variant } from "../Variant/Variant";
 import styled from "styled-components";
-
-type Variant = { variant?: "bright" | "dark" };
 
 interface ContentProps extends Variant {
   headline: string;
