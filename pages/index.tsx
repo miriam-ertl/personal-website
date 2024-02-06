@@ -4,7 +4,7 @@ import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.st
 import SectionTextBackground from "@/components/SectionTextBackground/SectionTextBackground";
 import SectionTextButtonImage from "@/components/SectionTextButton/SectionTextButtonImage";
 
-export default function HomePage(Headline) {
+export default function HomePage() {
   return (
     <main>
       <SectionTextButtonImage
@@ -19,7 +19,17 @@ export default function HomePage(Headline) {
         }}
         variant={"bright"}
       />
-      <SectionTextBackground headlineSmall={""} headline="" paragraph={""} />
+      <SectionTextBackground
+        headlineGroup={{
+          headlineSmall: "Eine digitale Reise",
+          headline:
+            "HTML, CSS, JavaScript im Spiel, Grafiken und Funktionen, mit jedem Ziel. Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
+        }}
+        paragraph={
+          "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie."
+        }
+        variant={"dark"}
+      />
       <section>
         <h2>{contentThree.headline}</h2>
         <Image
@@ -80,7 +90,7 @@ export const content: ContentProps = {
 };*/
 
 // Definition SECTION TWO
-interface ContentPropsTwo {
+/*interface ContentPropsTwo {
   headlineGroup: { headlineSmall: string; headline: string };
   paragraph: string;
   variant: "bright" | "dark";
@@ -95,7 +105,7 @@ export const contentTwo: ContentPropsTwo = {
   paragraph:
     "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
   variant: "dark",
-};
+};*/
 
 // Definition SECTION THREE
 

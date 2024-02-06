@@ -10,9 +10,6 @@ const StyledSectionTextbackground = styled.section<Variant>`
   color: ${({ variant }) =>
     variant === "dark" ? "var(--me-text-inverted)" : "var(--me-text-gray-700)"};
 `;
-const SytledHeadlineGroup = styled.div``;
-
-const StyledParagraph = styled.div``;
 
 interface ContentPropsTwo extends Variant {
   headlineGroup: { headlineSmall: string; headline: string };
