@@ -1,21 +1,42 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
+import ImageList from "../ImageList/ImageList";
 import { SecondaryButton } from "../SecondaryButton/SecondaryButton.styled";
 import { Variant } from "../Variant/Variant";
 import styled from "styled-components";
 
 interface ContentPropsThree extends Variant {
   headline: string;
-  imageGroup: {
-    imageOne: StyledImageProps;
-    imageTwo: StyledImageProps;
-    imageThree: StyledImageProps;
-  };
+  images: StyledImageProps[];
   button: string;
   variant: "bright" | "dark";
 }
 
-const StyledSectionTextOverviewButton = styled.section<Variant>`
+export const placeholderImages: StyledImageProps[] = [
+  {
+    src: "/placeholder-300-310.jpg",
+    width: 148,
+    height: 148,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+  {
+    src: "/placeholder-300-310.jpg",
+    width: 148,
+    height: 148,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+  {
+    src: "/placeholder-300-310.jpg",
+    width: 148,
+    height: 148,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+];
+
+const StyledSectionTextImagelistButton = styled.section<Variant>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,42 +46,22 @@ const StyledSectionTextOverviewButton = styled.section<Variant>`
       : "var(--me-color-gray-500)"};
 `;
 
-const SectionTextOverviewButton = ({
+const SectionTextImagelistButton = ({
   headline,
-  imageGroup,
+  images,
   button,
   variant = "bright",
 }: ContentPropsThree) => {
   return (
-    <section>
+    <StyledSectionTextImagelistButton variant={variant}>
       <h2>{headline}</h2>
-      <Image
-        src={imageGroup.imageOne.src}
-        width={imageGroup.imageOne.width}
-        height={imageGroup.imageOne.height}
-        alt={imageGroup.imageOne.alt}
-        variant={imageGroup.imageOne.variant}
-      />
-      <Image
-        src={imageGroup.imageTwo.src}
-        width={imageGroup.imageTwo.width}
-        height={imageGroup.imageTwo.height}
-        alt={imageGroup.imageTwo.alt}
-        variant={imageGroup.imageTwo.variant}
-      />
-      <Image
-        src={imageGroup.imageThree.src}
-        width={imageGroup.imageThree.width}
-        height={imageGroup.imageThree.height}
-        alt={imageGroup.imageThree.alt}
-        variant={imageGroup.imageThree.variant}
-      />
+      <ImageList images={images} />
       <SecondaryButton>{button}</SecondaryButton>
-    </section>
+    </StyledSectionTextImagelistButton>
   );
 };
 
-export default SectionTextOverviewButton;
+export default SectionTextImagelistButton;
 
 //KEEP THIS FOR LATER
 /*export const contentThree: ContentPropsThree = {
