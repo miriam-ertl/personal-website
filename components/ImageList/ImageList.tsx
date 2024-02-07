@@ -4,10 +4,13 @@ import styled from "styled-components";
 
 const StyledImageList = styled.ul`
   display: flex;
+  flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const StyledImageListItem = styled.li`
-  margin-right: 1rem;
+  padding: 0.5rem;
 `;
 
 const ImageList = ({ images }: { images: StyledImageProps[] }): JSX.Element => (
