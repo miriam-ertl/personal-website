@@ -30,3 +30,5 @@ const Image = ({ src, width, height, alt, variant }: StyledImageProps) => {
 };
 
 export default Image;
+
+// TODO: default für Image einrichten

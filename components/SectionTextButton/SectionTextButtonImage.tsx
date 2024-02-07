@@ -52,6 +52,8 @@ const SectionTextButtonImage = ({
 
 export default SectionTextButtonImage;
 
+// TODO: Content auslagern
+
 // KEEP THIS FOR LATER
 /*const content: ContentProps = {
   headline: "Wo Ideen ihre Reise machen – in der Welt der Codes.",

@@ -52,6 +52,8 @@ const SectionTextBackground = ({
 
 export default SectionTextBackground;
 
+// TODO: Content auslagern
+
 // KEEP THIS FOR LATER
 /*export const contentTwo: ContentPropsTwo = {
   headlineGroup: {

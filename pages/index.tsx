@@ -40,3 +40,5 @@ export default function HomePage() {
     </main>
   );
 }
+
+// TODO: Content auslagern
