@@ -15,35 +15,44 @@ interface ContentPropsThree extends Variant {
 export const placeholderImages: StyledImageProps[] = [
   {
     src: "/placeholder-300-310.jpg",
-    width: 148,
-    height: 148,
+    width: 200,
+    height: 200,
     alt: "placeholder",
     variant: "cropped",
   },
   {
     src: "/placeholder-300-310.jpg",
-    width: 148,
-    height: 148,
+    width: 200,
+    height: 200,
     alt: "placeholder",
     variant: "cropped",
   },
   {
     src: "/placeholder-300-310.jpg",
-    width: 148,
-    height: 148,
+    width: 200,
+    height: 200,
     alt: "placeholder",
     variant: "cropped",
   },
 ];
 
 const StyledSectionTextImagelistButton = styled.section<Variant>`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   background-color: ${({ variant }) =>
     variant === "bright"
       ? "var(--me-color-white)"
       : "var(--me-color-gray-500)"};
+`;
+
+const StlyedHeadline = styled.div`
+  align-self: flex-start;
+  padding-bottom: 5rem;
+  margin: 0.5rem;
+`;
+
+const StyledImageListButton = styled.div`
+  display: flex;
+  flex-wrap: wrap;
 `;
 
 const SectionTextImagelistButton = ({
@@ -54,14 +63,21 @@ const SectionTextImagelistButton = ({
 }: ContentPropsThree) => {
   return (
     <StyledSectionTextImagelistButton variant={variant}>
-      <h2>{headline}</h2>
-      <ImageList images={images} />
-      <SecondaryButton>{button}</SecondaryButton>
+      <StlyedHeadline>
+        <h2>{headline}</h2>
+      </StlyedHeadline>
+      <StyledImageListButton>
+        <ImageList images={images} />
+        <SecondaryButton>{button}</SecondaryButton>
+      </StyledImageListButton>
     </StyledSectionTextImagelistButton>
   );
 };
 
 export default SectionTextImagelistButton;
+
+// TODO: Content auslagern
+// TODO: type-Doppelungen placeholderImages entnehmen
 
 //KEEP THIS FOR LATER
 /*export const contentThree: ContentPropsThree = {
