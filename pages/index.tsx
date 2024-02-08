@@ -12,7 +12,7 @@ export default function HomePage() {
         headline={"Wo Ideen ihre Reise machen – in der Welt der Codes."}
         button={"About"}
         image={{
-          src: "/placeholder-300-310.jpg",
+          src: "/placeholder-1920.jpg",
           width: 300,
           height: 300,
           alt: "placeholder",
