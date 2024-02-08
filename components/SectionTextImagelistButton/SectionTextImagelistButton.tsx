@@ -2,14 +2,13 @@ import Image, { StyledImageProps } from "@/components/Image/Image";
 
 import ImageList from "../ImageList/ImageList";
 import { SecondaryButton } from "../SecondaryButton/SecondaryButton.styled";
-import { Variant } from "../Variant/Variant";
+import { VariantProps } from "@/dataStructures/VariantProps/VariantProps";
 import styled from "styled-components";
 
-interface ContentPropsThree extends Variant {
+interface SectionTextImagelistButtonProps extends VariantProps {
   headline: string;
   images: StyledImageProps[];
   button: string;
-  variant: "bright" | "dark";
 }
 
 export const placeholderImages: StyledImageProps[] = [
@@ -36,7 +35,7 @@ export const placeholderImages: StyledImageProps[] = [
   },
 ];
 
-const StyledSectionTextImagelistButton = styled.section<Variant>`
+const StyledSectionTextImagelistButton = styled.section<VariantProps>`
   flex-wrap: wrap;
   background-color: ${({ variant }) =>
     variant === "bright"
@@ -44,7 +43,7 @@ const StyledSectionTextImagelistButton = styled.section<Variant>`
       : "var(--me-color-gray-500)"};
 `;
 
-const StlyedHeadline = styled.div`
+const StyledHeadline = styled.div`
   align-self: flex-start;
   padding-bottom: 5rem;
   margin: 0.5rem;
@@ -61,12 +60,12 @@ const SectionTextImagelistButton = ({
   images,
   button,
   variant = "bright",
-}: ContentPropsThree) => {
+}: SectionTextImagelistButtonProps) => {
   return (
     <StyledSectionTextImagelistButton variant={variant}>
-      <StlyedHeadline>
+      <StyledHeadline>
         <h2>{headline}</h2>
-      </StlyedHeadline>
+      </StyledHeadline>
       <StyledImageListButton>
         <ImageList images={images} />
         <SecondaryButton>{button}</SecondaryButton>

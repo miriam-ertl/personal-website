@@ -29,7 +29,6 @@ export default function HomePage() {
         paragraph={
           "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie."
         }
-        variant={"dark"}
       />
       <SectionTextImagelistButton
         headline={"Im digitalen Universum"}

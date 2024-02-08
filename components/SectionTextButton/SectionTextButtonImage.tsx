@@ -1,16 +1,16 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
 import { PrimaryButton } from "../PrimaryButton/PrimaryButton.styled";
-import { Variant } from "../Variant/Variant";
+import { VariantProps } from "../../dataStructures/VariantProps/VariantProps";
 import styled from "styled-components";
 
-interface ContentProps extends Variant {
+interface SectionTextButtonImageProps extends VariantProps {
   headline: string;
   button: string;
   image: StyledImageProps;
 }
 
-const StyledSectionTextButtonImage = styled.section<Variant>`
+const StyledSectionTextButtonImage = styled.section<VariantProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,7 +32,7 @@ const SectionTextButtonImage = ({
   button,
   image,
   variant = "bright",
-}: ContentProps) => {
+}: SectionTextButtonImageProps) => {
   return (
     <StyledSectionTextButtonImage variant={variant}>
       <StyledTextButtonContainer>

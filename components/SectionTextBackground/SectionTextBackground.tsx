@@ -1,7 +1,7 @@
-import { Variant } from "../Variant/Variant";
+import { VariantProps } from "../../dataStructures/VariantProps/VariantProps";
 import styled from "styled-components";
 
-const StyledSectionTextBackground = styled.section<Variant>`
+const StyledSectionTextBackground = styled.section<VariantProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +11,7 @@ const StyledSectionTextBackground = styled.section<Variant>`
     variant === "dark" ? "var(--me-text-inverted)" : "var(--me-text-gray-700)"};
 `;
 
-const StlyedHeadlineGroup = styled.div`
+const StyledHeadlineGroup = styled.div`
   justify-content: flex-end;
   align-self: flex-end;
   padding-bottom: 5rem;
@@ -26,23 +26,22 @@ const StyledParagraph = styled.div`
   margin-right: 5rem;
 `;
 
-interface ContentPropsTwo extends Variant {
+interface SectionTextBackgroundProps extends VariantProps {
   headlineGroup: { headlineSmall: string; headline: string };
   paragraph: string;
-  variant: "bright" | "dark";
 }
 
 const SectionTextBackground = ({
   headlineGroup,
   paragraph,
   variant = "dark",
-}: ContentPropsTwo) => {
+}: SectionTextBackgroundProps) => {
   return (
     <StyledSectionTextBackground variant={variant}>
-      <StlyedHeadlineGroup>
+      <StyledHeadlineGroup>
         <h6 className="miscellaneous">{headlineGroup.headlineSmall}</h6>
         <h2>{headlineGroup.headline}</h2>
-      </StlyedHeadlineGroup>
+      </StyledHeadlineGroup>
       <StyledParagraph>
         <p>{paragraph}</p>
       </StyledParagraph>

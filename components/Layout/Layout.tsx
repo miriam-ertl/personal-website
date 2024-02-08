@@ -2,7 +2,7 @@ import Footer from "@/components/Footer/Footer";
 import Header from "../Header/Header";
 import styled from "styled-components";
 
-export const Container = styled.div`
+export const PageContainer = styled.div`
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
@@ -18,10 +18,10 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <Container>
+    <PageContainer>
       <Header />
       <Content>{children}</Content>
       <Footer />
-    </Container>
+    </PageContainer>
   );
 }

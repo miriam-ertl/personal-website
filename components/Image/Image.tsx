@@ -1,4 +1,4 @@
-import NextImage, * as image from "next/image";
+import NextImage, { type ImageProps } from "next/image";
 
 import styled from "styled-components";
 
@@ -15,8 +15,7 @@ const StyledImage = styled(NextImage)`
   padding-bottom: 0.5rem;
   object-fit: cover;
 `;
-
-export interface StyledImageProps extends image.ImageProps {
+export interface StyledImageProps extends ImageProps {
   variant: "cropped" | "default";
 }
 
