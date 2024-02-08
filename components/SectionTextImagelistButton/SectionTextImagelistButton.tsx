@@ -53,6 +53,7 @@ const StlyedHeadline = styled.div`
 const StyledImageListButton = styled.div`
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 5rem;
 `;
 
 const SectionTextImagelistButton = ({
