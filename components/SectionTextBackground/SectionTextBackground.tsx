@@ -18,7 +18,7 @@ const StyledHeadlineGroup = styled.div`
   margin: 0.5rem;
 `;
 
-const StyledParagraph = styled.div`
+const StyledParagraph = styled.p`
   justify-content: flex-end;
   align-self: flex-end;
   padding-left: 16rem;
@@ -42,9 +42,7 @@ const SectionTextBackground = ({
         <h6 className="miscellaneous">{headlineGroup.headlineSmall}</h6>
         <h2>{headlineGroup.headline}</h2>
       </StyledHeadlineGroup>
-      <StyledParagraph>
-        <p>{paragraph}</p>
-      </StyledParagraph>
+      <StyledParagraph>{paragraph}</StyledParagraph>
     </StyledSectionTextBackground>
   );
 };
