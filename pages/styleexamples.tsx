@@ -1,5 +1,4 @@
-import { PrimaryButton } from "@/components/PrimaryButton/PrimaryButton.styled.js";
-import { SecondaryButton } from "@/components/SecondaryButton/SecondaryButton.styled.js";
+import { Button } from "@/components/Button/Button.styled";
 
 export default function StylesExamples() {
   return (
@@ -18,8 +17,8 @@ export default function StylesExamples() {
           Wo Ideen ihre Reise machen – in der Welt der Codes.
         </div>
       </section>
-      <PrimaryButton>About</PrimaryButton>
-      <SecondaryButton>Work</SecondaryButton>
+      <Button>About</Button>
+      <Button $secondary>Work</Button>
     </main>
   );
 }
