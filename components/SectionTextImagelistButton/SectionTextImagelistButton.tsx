@@ -75,20 +75,3 @@ const SectionTextImagelistButton = ({
 };
 
 export default SectionTextImagelistButton;
-
-// TODO: Content auslagern
-// TODO: type-Doppelungen placeholderImages entnehmen
-
-//KEEP THIS FOR LATER
-/*export const contentThree: ContentPropsThree = {
-  headline: "Im digitalen Universum",
-  image: {
-    src: "/placeholder-148-148.jpg",
-    width: 148,
-    height: 148,
-    alt: "placeholder",
-    variant: "cropped",
-  },
-  button: "Work",
-  variant: "bright",
-};*/

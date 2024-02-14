@@ -51,19 +51,3 @@ const SectionTextButtonImage = ({
 };
 
 export default SectionTextButtonImage;
-
-// TODO: Content auslagern
-
-// KEEP THIS FOR LATER
-/*const content: ContentProps = {
-  headline: "Wo Ideen ihre Reise machen – in der Welt der Codes.",
-  button: "About",
-  image: {
-    src: "/placeholder-300-310.jpg",
-    width: 300,
-    height: 310,
-    alt: "placeholder",
-    variant: "default",
-  },
-  variant: "bright",
-};*/

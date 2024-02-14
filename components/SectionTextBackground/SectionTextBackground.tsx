@@ -48,17 +48,3 @@ const SectionTextBackground = ({
 };
 
 export default SectionTextBackground;
-
-// TODO: Content auslagern
-
-// KEEP THIS FOR LATER
-/*export const contentTwo: ContentPropsTwo = {
-  headlineGroup: {
-    headlineSmall: "Eine digitale Reise",
-    headline:
-      "HTML, CSS, JavaScript im Spiel, Grafiken und Funktionen, mit jedem Ziel. Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
-  },
-  paragraph:
-    "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
-  variant: "dark",
-};*/
