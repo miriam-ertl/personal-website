@@ -1,7 +1,7 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
+import { Button } from "../Button/Button.styled";
 import ImageList from "../ImageList/ImageList";
-import { SecondaryButton } from "../SecondaryButton/SecondaryButton.styled";
 import { VariantProps } from "@/dataStructures/VariantProps/VariantProps";
 import styled from "styled-components";
 
@@ -68,7 +68,7 @@ const SectionTextImagelistButton = ({
       </StyledHeadline>
       <StyledImageListButton>
         <ImageList images={images} />
-        <SecondaryButton>{button}</SecondaryButton>
+        <Button $secondary>{button}</Button>
       </StyledImageListButton>
     </StyledSectionTextImagelistButton>
   );
