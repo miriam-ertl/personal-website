@@ -1,6 +1,6 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
 
-import { PrimaryButton } from "../PrimaryButton/PrimaryButton.styled";
+import { Button } from "@/components/Button/Button.styled";
 import { VariantProps } from "../../dataStructures/VariantProps/VariantProps";
 import styled from "styled-components";
 
@@ -37,7 +37,7 @@ const SectionTextButtonImage = ({
     <StyledSectionTextButtonImage variant={variant}>
       <StyledTextButtonContainer>
         <h1>{headline}</h1>
-        <PrimaryButton>{button}</PrimaryButton>
+        <Button>{button}</Button>
       </StyledTextButtonContainer>
       <Image
         src={image.src}
