@@ -1,26 +1,43 @@
-import { Button } from "@/components/Button/Button.styled";
+import SectionTextImagelistButton, {
+  placeholderImages,
+} from "@/components/SectionTextImagelistButton/SectionTextImagelistButton";
+
+import SectionTextBackground from "@/components/SectionTextBackground/SectionTextBackground";
+import SectionTextButtonImage from "@/components/SectionTextButton/SectionTextButtonImage";
 
 export default function HomePage() {
   return (
     <main>
-      <h1>Wo Ideen ihre Reise machen – in der Welt der Codes.</h1>
-      <h2>Wo Ideen ihre Reise machen – in der Welt der Codes.</h2>
-      <h3>Wo Ideen ihre Reise machen – in der Welt der Codes.</h3>
-      <h4>Wo Ideen ihre Reise machen – in der Welt der Codes.</h4>
-      <h5>Wo Ideen ihre Reise machen – in der Welt der Codes.</h5>
-      <section>
-        <div>Wo Ideen ihre Reise machen – in der Welt der Codes.</div>
-        <div className="miscellaneous">
-          Wo Ideen ihre Reise machen – in der Welt der Codes.
-        </div>
-        <div className="copyright">
-          Wo Ideen ihre Reise machen – in der Welt der Codes.
-        </div>
-      </section>
-      <div>
-        <Button>About</Button>
-        <Button $secondary>Work</Button>
-      </div>
+      <SectionTextButtonImage
+        headline={"Wo Ideen ihre Reise machen – in der Welt der Codes."}
+        button={"About"}
+        image={{
+          src: "/placeholder-1920.jpg",
+          width: 300,
+          height: 300,
+          alt: "placeholder",
+          variant: "default",
+        }}
+        variant={"bright"}
+      />
+      <SectionTextBackground
+        headlineGroup={{
+          headlineSmall: "Eine digitale Reise",
+          headline:
+            "HTML, CSS, JavaScript im Spiel, Grafiken und Funktionen, mit jedem Ziel. Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie.",
+        }}
+        paragraph={
+          "Mit jeder Zeile Code, wird eine Geschichte erzählt. Von Responsive Design bis zur API-Magie, Eine Welt der Möglichkeiten, grenzenlos, wie die Fantasie."
+        }
+      />
+      <SectionTextImagelistButton
+        headline={"Im digitalen Universum"}
+        images={placeholderImages}
+        button={"Work"}
+        variant={"bright"}
+      />
     </main>
   );
 }
+
+// TODO: Content auslagern
