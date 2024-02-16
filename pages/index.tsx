@@ -3,7 +3,7 @@ import SectionTextImagelistButton, {
 } from "@/components/SectionTextImagelistButton/SectionTextImagelistButton";
 
 import SectionTextBackground from "@/components/SectionTextBackground/SectionTextBackground";
-import SectionTextButtonImage from "@/components/SectionTextButton/SectionTextButtonImage";
+import SectionTextButtonImage from "@/components/SectionTextButtonImage/SectionTextButtonImage";
 
 export default function HomePage() {
   return (
