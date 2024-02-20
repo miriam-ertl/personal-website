@@ -21,7 +21,12 @@ describe(SectionTextButtonImage.name, () => {
       />
     );
     const heading = screen.getByRole("heading", { level: 1 });
-
     expect(heading).toBeInTheDocument();
+
+    const button = screen.getByRole("button", { name: /About/i });
+    expect(button).toBeInTheDocument();
+
+    const image = screen.getByAltText(/placeholder/i);
+    expect(image).toHaveAttribute("alt");
   });
 });
