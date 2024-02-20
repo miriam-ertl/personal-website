@@ -6,7 +6,7 @@ import { render, screen } from "@testing-library/react";
 import SectionTextButtonImage from "../SectionTextButtonImage/SectionTextButtonImage";
 
 describe(SectionTextButtonImage.name, () => {
-  it("renders a heading", () => {
+  it("renders a heading, a button and an image", () => {
     render(
       <SectionTextButtonImage
         headline={"hallo"}
