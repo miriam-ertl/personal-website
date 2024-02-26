@@ -27,7 +27,7 @@ describe(SectionTextButtonImage.name, () => {
     expect(button).toBeInTheDocument();
 
     const image = screen.getByAltText(/placeholder/i);
-    expect(image).toHaveAttribute("alt");
+    expect(image).toBeInTheDocument();
   });
   it("renders a heading, a button and a cropped image on dark background", () => {
     render(
@@ -51,6 +51,6 @@ describe(SectionTextButtonImage.name, () => {
     expect(button).toBeInTheDocument();
 
     const image = screen.getByAltText(/placeholder/i);
-    expect(image).toHaveAttribute("alt");
+    expect(image).toBeInTheDocument();
   });
 });
