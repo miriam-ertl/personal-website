@@ -44,7 +44,7 @@ describe(SectionTextButtonImage.name, () => {
         variant={"dark"}
       />
     );
-    const heading = screen.getByRole("heading", { level: 1 });
+    const heading = screen.getByRole("heading", { level: 1, name: "hallo" });
     expect(heading).toBeInTheDocument();
 
     const button = screen.getByRole("button", { name: /About/i });
