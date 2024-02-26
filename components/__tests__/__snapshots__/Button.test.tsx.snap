@@ -7,3 +7,11 @@ exports[`Button renders button 1`] = `
   />
 </div>
 `;
+
+exports[`StyledButton renders button 1`] = `
+<div>
+  <button
+    class="sc-beySPh hfXiWF"
+  />
+</div>
+`;
