@@ -8,4 +8,8 @@ describe("Button", () => {
 
     expect(screen.getByRole("button")).toBeInTheDocument();
   });
+  it("renders button", () => {
+    const { container } = render(<Button />);
+    expect(container).toMatchSnapshot();
+  });
 });
