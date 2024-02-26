@@ -17,7 +17,7 @@ describe(SectionTextButtonImage.name, () => {
         }}
       />
     );
-    const heading = screen.getByRole("heading", { level: 1 });
+    const heading = screen.getByRole("heading", { level: 1, name: "hallo" });
     expect(heading).toBeInTheDocument();
 
     const button = screen.getByText(/about/i);
