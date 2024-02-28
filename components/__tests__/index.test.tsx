@@ -8,7 +8,7 @@ describe(SectionTextButtonImage.name, () => {
       <SectionTextButtonImage
         headline={"hallo"}
         button={"about"}
-        image={{
+        imageProps={{
           src: "/placeholder-1920.jpg",
           width: 230,
           height: 230,

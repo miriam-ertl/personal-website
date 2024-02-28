@@ -11,7 +11,7 @@ export default function HomePage() {
       <SectionTextButtonImage
         headline={"Wo Ideen ihre Reise machen – in der Welt der Codes."}
         button={"About"}
-        image={{
+        imageProps={{
           src: "/placeholder-1920.jpg",
           width: 300,
           height: 300,
