@@ -3,7 +3,7 @@ import SectionTextImagelistButton, {
 } from "@/components/SectionTextImagelistButton/SectionTextImagelistButton";
 
 import SectionTextBackground from "@/components/SectionTextBackground/SectionTextBackground";
-import SectionTextButtonImage from "@/components/SectionTextButton/SectionTextButtonImage";
+import SectionTextButtonImage from "@/components/SectionTextButtonImage/SectionTextButtonImage";
 
 export default function HomePage() {
   return (
@@ -11,7 +11,7 @@ export default function HomePage() {
       <SectionTextButtonImage
         headline={"Wo Ideen ihre Reise machen – in der Welt der Codes."}
         button={"About"}
-        image={{
+        imageProps={{
           src: "/placeholder-1920.jpg",
           width: 300,
           height: 300,
@@ -39,5 +39,3 @@ export default function HomePage() {
     </main>
   );
 }
-
-// TODO: Content auslagern

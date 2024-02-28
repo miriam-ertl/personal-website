@@ -17,6 +17,7 @@ const StyledImage = styled(NextImage)`
 `;
 export interface StyledImageProps extends ImageProps {
   variant: "cropped" | "default";
+  priority?: boolean;
 }
 
 const Image = ({ src, width, height, alt, variant }: StyledImageProps) => {
@@ -26,9 +27,15 @@ const Image = ({ src, width, height, alt, variant }: StyledImageProps) => {
     );
   }
 
-  return <StyledImage src={src} width={width} height={height} alt={alt} />;
+  return (
+    <StyledImage
+      src={src}
+      width={width}
+      height={height}
+      alt={alt}
+      priority={true}
+    />
+  );
 };
 
 export default Image;
-
-// TODO: default für Image einrichten
