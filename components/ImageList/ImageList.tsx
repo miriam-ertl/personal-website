@@ -25,6 +25,7 @@ const ImageList = ({ images }: { images: StyledImageProps[] }): JSX.Element => (
           height={image.height}
           alt={image.alt}
           variant={image.variant}
+          priority={image.priority}
         />
       </StyledImageListItem>
     ))}

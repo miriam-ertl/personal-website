@@ -47,6 +47,7 @@ const SectionTextButtonImage = ({
         height={imageProps.height}
         alt={imageProps.alt}
         variant={imageProps.variant}
+        priority={true}
       />
     </StyledSectionTextButtonImage>
   );
