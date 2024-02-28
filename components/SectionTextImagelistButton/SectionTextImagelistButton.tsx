@@ -35,10 +35,12 @@ export const placeholderImages: StyledImageProps[] = [
   },
 ];
 
-const StyledSectionTextImagelistButton = styled.section<VariantProps>`
+const StyledSectionTextImagelistButton = styled.section<{
+  $variant: VariantProps["variant"];
+}>`
   flex-wrap: wrap;
-  background-color: ${({ variant }) =>
-    variant === "bright"
+  background-color: ${({ $variant }) =>
+    $variant === "bright"
       ? "var(--me-color-white)"
       : "var(--me-color-gray-500)"};
 `;
@@ -62,7 +64,7 @@ const SectionTextImagelistButton = ({
   variant = "bright",
 }: SectionTextImagelistButtonProps) => {
   return (
-    <StyledSectionTextImagelistButton variant={variant}>
+    <StyledSectionTextImagelistButton $variant={variant}>
       <StyledHeadline>
         <h2>{headline}</h2>
       </StyledHeadline>

@@ -1,14 +1,18 @@
 import { VariantProps } from "../../dataStructures/VariantProps/VariantProps";
 import styled from "styled-components";
 
-const StyledSectionTextBackground = styled.section<VariantProps>`
+const StyledSectionTextBackground = styled.section<{
+  $variant: VariantProps["variant"];
+}>`
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: ${({ variant }) =>
-    variant === "dark" ? "var(--me-color-gray-500)" : "var(--me-color-white)"};
-  color: ${({ variant }) =>
-    variant === "dark" ? "var(--me-text-inverted)" : "var(--me-text-gray-700)"};
+  background-color: ${({ $variant }) =>
+    $variant === "dark" ? "var(--me-color-gray-500)" : "var(--me-color-white)"};
+  color: ${({ $variant }) =>
+    $variant === "dark"
+      ? "var(--me-text-inverted)"
+      : "var(--me-text-gray-700)"};
 `;
 
 const StyledHeadlineGroup = styled.div`
@@ -37,7 +41,7 @@ const SectionTextBackground = ({
   variant = "dark",
 }: SectionTextBackgroundProps) => {
   return (
-    <StyledSectionTextBackground variant={variant}>
+    <StyledSectionTextBackground $variant={variant}>
       <StyledHeadlineGroup>
         <h6 className="miscellaneous">{headlineGroup.headlineSmall}</h6>
         <h2>{headlineGroup.headline}</h2>
