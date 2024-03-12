@@ -6,6 +6,22 @@ const StyledFooter = styled.footer`
   color: var(-me-text-inverted);
 `;
 
+const StyledFooterNavigation = styled.nav`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const StyledSocialMediaLinksBar = styled.ul`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`;
+
+const StyledSocialMediaLinksBarItem = styled.li`
+  padding: 0.5rem;
+`;
+
 const Footer = () => {
   return <StyledFooter>Footer</StyledFooter>;
 };
