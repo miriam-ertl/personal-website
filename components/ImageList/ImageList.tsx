@@ -6,7 +6,6 @@ const StyledImageList = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  display: flex;
   flex-wrap: wrap;
   margin-bottom: 0.5rem;
 `;
