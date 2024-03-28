@@ -47,14 +47,13 @@ const StyledSectionTextImagelistButton = styled.section<{
 
 const StyledHeadline = styled.div`
   align-self: flex-start;
-  padding-bottom: 5rem;
-  margin: 0.5rem;
+  padding: 0.5rem 0.5rem 5rem 0.5rem;
 `;
 
 const StyledImageListButton = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 5rem;
+  padding: 0.5rem 1rem 5rem 0.5rem;
 `;
 
 const SectionTextImagelistButton = ({

@@ -8,7 +8,7 @@ const StyledContactList = styled.ul`
 `;
 
 const StyledContactListItem = styled.li`
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 5rem 0.5rem;
 `;
 
 const ContactList = ({

@@ -18,16 +18,15 @@ const StyledSectionTextBackground = styled.section<{
 const StyledHeadlineGroup = styled.div`
   justify-content: flex-end;
   align-self: flex-end;
-  padding-bottom: 5rem;
-  margin: 0.5rem;
+  padding: 0.5rem 1rem 5rem 0.5rem;
 `;
 
 const StyledParagraph = styled.p`
   justify-content: flex-end;
   align-self: flex-end;
-  padding-left: 16rem;
-  padding-bottom: 5rem;
-  margin-right: 5rem;
+  max-width: 50%;
+  min-width: 5rem;
+  padding: 0.5rem 1rem 5rem 0.5rem;
 `;
 
 interface SectionTextBackgroundProps extends VariantProps {

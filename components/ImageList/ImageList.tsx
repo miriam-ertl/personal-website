@@ -7,11 +7,10 @@ const StyledImageList = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
-  margin-bottom: 0.5rem;
 `;
 
 const StyledImageListItem = styled.li`
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem 1rem 0.5rem;
 `;
 
 const ImageList = ({ images }: { images: StyledImageProps[] }): JSX.Element => (
