@@ -1,5 +1,4 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
-// import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import styled from "styled-components";
 import ContactList from "../ContactList/ContactList";
 import LegalList from "../LegalList/LegalList";
