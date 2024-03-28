@@ -1,22 +1,24 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
-
 import styled from "styled-components";
 
-const StyledImageList = styled.ul`
+const StyledContactList = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  flex-wrap: wrap;
 `;
 
-const StyledImageListItem = styled.li`
-  padding: 0.5rem 0.5rem 1rem 0.5rem;
+const StyledContactListItem = styled.li`
+  padding: 0.5rem 0.5rem 5rem 0.5rem;
 `;
 
-const ImageList = ({ images }: { images: StyledImageProps[] }): JSX.Element => (
-  <StyledImageList>
+const ContactList = ({
+  images,
+}: {
+  images: StyledImageProps[];
+}): JSX.Element => (
+  <StyledContactList>
     {images.map((image, src) => (
-      <StyledImageListItem key={src}>
+      <StyledContactListItem key={src}>
         <Image
           src={image.src}
           width={image.width}
@@ -25,9 +27,9 @@ const ImageList = ({ images }: { images: StyledImageProps[] }): JSX.Element => (
           variant={image.variant}
           priority={image.priority}
         />
-      </StyledImageListItem>
+      </StyledContactListItem>
     ))}
-  </StyledImageList>
+  </StyledContactList>
 );
 
-export default ImageList;
+export default ContactList;

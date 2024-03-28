@@ -9,7 +9,7 @@ export const PageContainer = styled.div`
 `;
 
 export const Content = styled.div`
-  padding: 20px;
+  justify-content: center;
 `;
 
 interface LayoutProps {
@@ -21,7 +21,7 @@ export default function Layout({ children }: LayoutProps) {
     <PageContainer>
       <Header />
       <Content>{children}</Content>
-      <Footer />
+      <Footer images={[]} />
     </PageContainer>
   );
 }

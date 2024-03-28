@@ -12,7 +12,7 @@ const StyledImage = styled(NextImage)`
   display: inline;
   width: auto;
   margin: 0;
-  padding-bottom: 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
   object-fit: cover;
 `;
 export interface StyledImageProps extends ImageProps {
