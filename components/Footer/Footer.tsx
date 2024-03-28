@@ -1,12 +1,41 @@
 import Image, { StyledImageProps } from "@/components/Image/Image";
-import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
+// import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 import styled from "styled-components";
+import ContactList from "../ContactList/ContactList";
+import LegalList from "../LegalList/LegalList";
 import { VariantProps } from "../../dataStructures/VariantProps/VariantProps";
+
+interface FooterProps extends VariantProps {
+  images: StyledImageProps[];
+}
+
+export const placeholderIcons: StyledImageProps[] = [
+  {
+    src: "/placeholder-300-310.jpg",
+    width: 20,
+    height: 20,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+  {
+    src: "/placeholder-300-310.jpg",
+    width: 20,
+    height: 20,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+  {
+    src: "/placeholder-300-310.jpg",
+    width: 20,
+    height: 20,
+    alt: "placeholder",
+    variant: "cropped",
+  },
+];
 
 const StyledFooter = styled.footer<{
   $variant: VariantProps["variant"];
 }>`
-  padding: 20px;
   flex-wrap: wrap;
   background-color: ${({ $variant }) =>
     $variant === "bright"
@@ -21,62 +50,15 @@ const StyledFooterNavigation = styled.nav`
   justify-content: space-between;
 `;
 
-const StyledContactList = styled.ul`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-`;
-
-const StyledContactListItems = styled.li`
-  padding: 0.5rem;
-`;
-
-const StyledLegalList = styled.ul`
-  padding: 0.5rem;
-`;
-
-const StyledLegalListItems = styled.li`
-  padding: 0.5rem;
-`;
-
-const Footer = () => {
+const Footer = ({ variant = "dark" }: FooterProps): JSX.Element => {
   return (
-    <StyledFooter $variant="dark">
+    <StyledFooter $variant={variant}>
       <StyledFooterNavigation>
-        <StyledContactList>
-          <StyledContactListItems></StyledContactListItems>
-        </StyledContactList>
-        <StyledLegalList>
-          <StyledLegalListItems></StyledLegalListItems>
-        </StyledLegalList>
+        <ContactList images={placeholderIcons} />
+        <LegalList />
       </StyledFooterNavigation>
     </StyledFooter>
   );
 };
 
 export default Footer;
-
-// const contactItems = [
-//   {
-//     name: "LinkedIn",
-//   },
-//   { name: "Github" },
-//   { name: "Email" },
-// ];
-
-//   images,
-//   variant = "dark",
-// } : FooterProps) => {
-//   const listItems = contactItems.map(contactItem) =>
-//     <li key={contactItem.name}>
-//       <img src={getImageUrl(contactItem)} alt={contactItem.name} />
-//       <p>{contactItem.name}</p>
-//     </li>
-//   ;
-//   return (
-//     <>
-//     <StyledFooter $variant={variant}>
-//     <ul>{listItems}</ul>
-//     </StyledFooter>
-//     </>);
-// }
